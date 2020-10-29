@@ -1,0 +1,96 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #F8F7FF;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+h1{
+  font-size: 50px;
+  line-height: 1;
+  padding-top: 50px;
+  text-align: center;
+}
+h4{
+    font-size: 25px;
+    line-height: 1.5;
+    padding-bottom: 50px;
+    text-align: center;
+}
+nav li{
+    display: inline;
+    padding-right: 20px;
+}
+nav a{
+    color: #F8F7FF;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration-color: #FFD8BE;
+    text-decoration-style: solid;
+}
+p{
+    padding-left: 10px;
+    text-align: center;
+}
+nav{
+    background-color: #9381FF;
+    padding: 15px;
+    text-align: right;
+}
+.header1{
+    background-color: #9381FF;
+}
+footer{
+    background-color: #9381FF;
+    color: #F8F7FF;
+    text-align: right;
+}
+footer p{
+    text-align: right;
+    grid-row-gap: 20px;
+}
+footer img{
+
+}
+p{
+    padding-left: 10px;
+    text-align: center;
+}
+.airfryer #eggplantparm{
+    width: 200px;
+    height: auto;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-auto-rows: auto;
+}
+#main{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.intro_text{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.sweetpotato-image img{
+    width: 90%;
+    height: auto;
+    padding: 10px;
+}
+.home-recipes h2{
+    text-align: right;
+    grid-column-end: 2/ 1;
+}
+
+.wings-text{
+    text-align: center;
+}
