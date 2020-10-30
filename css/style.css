@@ -3,6 +3,7 @@ html{
 }
 body{
     background-color: #F8F7FF;
+    font-family: 'Montserrat';
     font-size: 18px;
     margin: 0;
     padding: 0;
@@ -39,10 +40,34 @@ p{
 nav{
     background-color: #9381FF;
     padding: 15px;
-    text-align: right;
+    text-align: center;
+}
+#logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    min-width: 300px;
 }
 .header1{
     background-color: #9381FF;
+}
+.intro-text{
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+}
+.intro-text p{
+    border-top: 3px solid #B8B8FF;
+    border-bottom: 3px solid #B8B8FF;
+    font-family: 'Lora';
+    font-size: 15px;
+}
+.header1{
+    background-attachment: fixed; /* Parallax effect */     
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    color: white;
+    height: 200px;  
 }
 footer{
     background-color: #9381FF;
@@ -57,40 +82,74 @@ footer img{
 
 }
 p{
-    padding-left: 10px;
-    text-align: center;
-}
-.airfryer #eggplantparm{
-    width: 200px;
-    height: auto;
-}
-.container{
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-auto-rows: auto;
-}
-#main{
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
-.intro_text{
-    grid-row-start: 2;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
-.sweetpotato-image img{
-    width: 90%;
-    height: auto;
     padding: 10px;
-}
-.home-recipes h2{
-    text-align: right;
-    grid-column-end: 2/ 1;
+    text-align: center;
 }
 
-.wings-text{
+.home-recipes{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-row-gap: 30px;
+}
+.item1, .item2, .item3, .item4, .item5, .item6, .item7{
+    grid-column-start: 2;
+    padding: 10px;
     text-align: center;
+    font-size: 40px;
+    border: 10px solid #9381FF;
+    background-color: #FFEEDD;
+
+}
+.sweetpotato-image img, .eggplantparm-image img, .applecrisp-image img, .pizza-image img, .wings-image img, .ravioli-image img, .broccoli-image img{
+    width: 75%;
+    object-fit: contain;
+    overflow: hidden;
+
+}
+
+
+@media all and (min-width: 800px){
+    .intro-text p{
+        font-size: 35px;
+    }
+    h1{
+        font-size: 65px;
+    }
+    .home-recipes{
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+        grid-gap: 20px;
+
+    }
+    .item1{
+        grid-column-start: 2;
+    }
+    .item2{
+        grid-column-start: 3;
+    }
+    .item3{
+        grid-column-start: 4;
+    }
+    .item4{
+        grid-column-start: 2;
+    }
+    .item5{
+        grid-column-start: 3;
+    }
+    .item6{
+        grid-column-start: 4;
+    }
+    .item7{
+        grid-column-start: 3;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+    }
+    footer p{
+        
+    }
 }
