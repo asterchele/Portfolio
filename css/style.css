@@ -13,7 +13,10 @@ h1{
   line-height: 1;
   padding-top: 50px;
   text-align: center;
+  color: #9381FF;
+  text-shadow: 5px 5px #FFD8BE;
 }
+
 h4{
     font-size: 25px;
     line-height: 1.5;
@@ -106,11 +109,50 @@ p{
     width: 75%;
     object-fit: contain;
     overflow: hidden;
+}
+.review-images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+.TJ-Reviews{
+    color: #FFEEDD;
+    background-color: #9381FF;
+    border: 10px dotted #FFEEDD;
+    padding-bottom: 0px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.TJ-Reviews h1{
+    color: #FFEEDD;
+    text-shadow: 0px 0px #FFEEDD;
+}
+.about-me{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-column-start: 2;
+    margin-top: 25px;
+    border-top: 3px solid #B8B8FF;
+    border-bottom: 3px solid #B8B8FF;
+}
+.aboutme-image{
+    grid-column-start: 2;
+    width: 90%;
+    margin-top: 25px;
+    overflow: hidden;
 
 }
+.aboutme-text{
+    grid-column-start: 2;
+}
 
-
+/* Desktop View */
 @media all and (min-width: 800px){
+    p{
+        font-size: 35px;
+    }
     .intro-text p{
         font-size: 35px;
     }
@@ -148,8 +190,29 @@ p{
         display: flex;
         flex-direction: row;
         justify-content: right;
+        margin-top: 10px;
     }
     footer p{
         
+    }
+    main .about-me{
+    display: grid;
+    grid-template-columns: 1fr 3fr 5fr 1fr;
+    padding-bottom: 50px;
+    }
+    .aboutme-image{
+        grid-column-start: 2;
+        width: 100%;
+        height: auto;
+        padding-top: 50px;
+        overflow: visible;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .behind-college-eatz{
+        padding-bottom: 50px;
+    }
+    .aboutme-text{
+        grid-column-start: 3;
     }
 }
