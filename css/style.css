@@ -24,17 +24,19 @@ h4{
     text-align: center;
 }
 nav li{
-    display: inline;
+    display: inline-block;
     padding-right: 20px;
 }
-nav a{
+nav a, nav a:after, nav a:before{
+    position: relative;
     color: #F8F7FF;
     font-weight: bold;
     text-decoration: none;
 }
 nav a:hover{
+    background: #FFD8BE;
+    color: #9381FF;
     text-decoration-color: #FFD8BE;
-    text-decoration-style: solid;
 }
 p{
     padding-left: 10px;
@@ -73,22 +75,35 @@ nav{
     height: 200px;  
 }
 footer{
+    display: flex;
     background-color: #9381FF;
     color: #F8F7FF;
     text-align: right;
 }
 footer p{
     text-align: right;
-    grid-row-gap: 20px;
 }
-footer img{
 
-}
 p{
     padding: 10px;
     text-align: center;
 }
-
+.skip a{
+    background: #F8F7FF;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -40px;
+}
+*:focus{
+    border: 5px dotted #FFD8BE;
+}
+.skip a:focus{
+    top: 0px;
+}
 .home-recipes{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -191,9 +206,6 @@ p{
         flex-direction: row;
         justify-content: right;
         margin-top: 10px;
-    }
-    footer p{
-        
     }
     main .about-me{
     display: grid;
