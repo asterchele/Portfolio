@@ -10,14 +10,13 @@ body{
 }
 h1{
   font-size: 45px;
-  font-weight: bolder;
+  font-weight: 1500px;
   line-height: 1;
   padding-top: 50px;
   text-align: center;
   margin: auto;
-  color: #9381FF;
-  /* text-shadow: 5px 5px #FFD8BE; */
-  -webkit-text-stroke: 0.2px #9381FF;
+  color: #000000;
+  text-decoration: underline #B8B8FF;
 }
 
 h2{
