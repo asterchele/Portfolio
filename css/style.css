@@ -9,7 +9,7 @@ body{
     padding: 0;
 }
 h1{
-  font-size: 30px;
+  font-size: 45px;
   font-weight: bolder;
   line-height: 1;
   padding-top: 50px;
@@ -21,11 +21,17 @@ h1{
 }
 
 h2{
-    font-size: 20px;
+    font-size: 28px;
     line-height: 1.5;
     padding-bottom: 50px;
     text-align: center;
     margin: auto;
+}
+nav{
+    background-color: #9381FF;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
 }
 nav li{
     display: inline-block;
@@ -33,23 +39,20 @@ nav li{
 }
 nav a{
     position: relative;
-    color: #F8F7FF;
-    font-weight: bold;
+    color: black;
+    font-weight: bolder;
     text-decoration: none;
+    padding: 15px;
 }
 nav a:hover{
     border: 3px solid #FFD8BE;
+    padding: 0px;
 }
 
-nav{
-    background-color: #9381FF;
-    padding: 15px;
-    text-align: center;
+nav .current{
+    text-decoration: underline;
 }
-nav a.current{
-    text-decoration-style: dotted;
-    text-decoration-color: #FFD8BE;
-}
+
 #logo{
     display: block;
     margin-left: auto;
@@ -88,7 +91,6 @@ footer{
     display: flex;
     flex-wrap: wrap;
     background-color: #9381FF;
-    color: #F8F7FF;
     justify-content: space-evenly;
     flex: 1;
     padding: 0px;
@@ -98,6 +100,11 @@ footer p{
     justify-content: space-evenly;
     text-align: right;
     padding: 0px;
+    color: #000000;
+}
+footer img{
+    width: 75%;
+    display: block;
 }
 
 .skip a{
@@ -265,5 +272,8 @@ footer p{
     }
     .nav_links li{
         padding-top: 10px;
+    }
+    footer img{
+        max-width: 400px;
     }
 }
