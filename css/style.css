@@ -74,20 +74,22 @@ nav{
     color: white;
     height: 200px;  
 }
+p{
+    padding: 10px;
+    text-align: center;
+}
 footer{
     display: flex;
+    flex-wrap: wrap;
     background-color: #9381FF;
     color: #F8F7FF;
     text-align: right;
 }
 footer p{
     text-align: right;
+    padding: 0px;
 }
 
-p{
-    padding: 10px;
-    text-align: center;
-}
 .skip a{
     background: #F8F7FF;
     left: 0;
@@ -118,7 +120,6 @@ p{
     font-size: 40px;
     border: 10px solid #9381FF;
     background-color: #FFEEDD;
-
 }
 .sweetpotato-image img, .eggplantparm-image img, .applecrisp-image img, .pizza-image img, .wings-image img, .ravioli-image img, .broccoli-image img{
     width: 75%;
@@ -130,7 +131,10 @@ p{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 30px;
+    width: 95%;
+}
+.review-images img{
+    margin: 10px;
 }
 .TJ-Reviews{
     color: #FFEEDD;
@@ -154,13 +158,26 @@ p{
 }
 .aboutme-image{
     grid-column-start: 2;
-    width: 90%;
+    width: 40%;
     margin-top: 25px;
     overflow: hidden;
 
 }
 .aboutme-text{
     grid-column-start: 2;
+}
+.image-gallery{
+    background: #FFD8BE;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.image-gallery img{
+    border: 10px solid #9381FF;
+    margin: 10px;
+    align-content: center;
 }
 
 /* Desktop View */
@@ -203,6 +220,7 @@ p{
     }
     footer{
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: right;
         margin-top: 10px;
@@ -226,5 +244,10 @@ p{
     }
     .aboutme-text{
         grid-column-start: 3;
+    }
+    .image-gallery{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
