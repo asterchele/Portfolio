@@ -45,7 +45,7 @@ nav{
     padding: 15px;
     text-align: center;
 }
-nav li a:active{
+nav a.current:link, a.current:active{
     text-decoration-style: dotted;
     text-decoration-color: #FFD8BE;
 }
