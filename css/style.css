@@ -9,49 +9,51 @@ body{
     padding: 0;
 }
 h1{
-  font-size: 50px;
+  font-size: 45px;
+  font-weight: bolder;
   line-height: 1;
   padding-top: 50px;
   text-align: center;
   color: #9381FF;
-  text-shadow: 5px 5px #FFD8BE;
+  /* text-shadow: 5px 5px #FFD8BE; */
+  -webkit-text-stroke: 0.2px #9381FF;
 }
 
-h4{
-    font-size: 25px;
+h2{
+    font-size: 20px;
     line-height: 1.5;
     padding-bottom: 50px;
     text-align: center;
+    margin: auto;
 }
 nav li{
     display: inline-block;
     padding-right: 20px;
 }
-nav a, nav a:after, nav a:before{
+nav a{
     position: relative;
     color: #F8F7FF;
     font-weight: bold;
     text-decoration: none;
 }
 nav a:hover{
-    background: #FFD8BE;
-    color: #9381FF;
-    text-decoration-color: #FFD8BE;
+    border: 3px solid #FFD8BE;
 }
-p{
-    padding-left: 10px;
-    text-align: center;
-}
+
 nav{
     background-color: #9381FF;
     padding: 15px;
     text-align: center;
 }
+nav li a:active{
+    text-decoration-style: dotted;
+    text-decoration-color: #FFD8BE;
+}
 #logo{
     display: block;
     margin-left: auto;
     margin-right: auto; 
-    min-width: 300px;
+    max-width: 75%;
 }
 .header1{
     background-color: #9381FF;
@@ -65,6 +67,7 @@ nav{
     border-bottom: 3px solid #B8B8FF;
     font-family: 'Lora';
     font-size: 15px;
+    grid-column-start: 2;
 }
 .header1{
     background-attachment: fixed; /* Parallax effect */     
@@ -83,9 +86,13 @@ footer{
     flex-wrap: wrap;
     background-color: #9381FF;
     color: #F8F7FF;
-    text-align: right;
+    justify-content: space-evenly;
+    flex: 1;
+    padding: 0px;
 }
 footer p{
+    flex-direction: row;
+    justify-content: space-evenly;
     text-align: right;
     padding: 0px;
 }
@@ -158,7 +165,7 @@ footer p{
 }
 .aboutme-image{
     grid-column-start: 2;
-    width: 40%;
+    width: 100%;
     margin-top: 25px;
     overflow: hidden;
 
@@ -191,6 +198,9 @@ footer p{
     h1{
         font-size: 65px;
     }
+    h2{
+        font-size: 40px;
+    }
     .home-recipes{
         display: grid;
         grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
@@ -218,12 +228,8 @@ footer p{
     .item7{
         grid-column-start: 3;
     }
-    footer{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: right;
-        margin-top: 10px;
+    footer p{
+        margin-right: 0px;
     }
     main .about-me{
     display: grid;
@@ -249,5 +255,12 @@ footer p{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+    }
+ 
+    #logo{
+        max-width: 400px;
+    }
+    .nav_links li{
+        padding-top: 10px;
     }
 }
