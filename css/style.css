@@ -58,6 +58,9 @@ nav .current{
     margin-right: auto; 
     width: 75%;
 }
+main{
+    padding-top: 50px;
+}
 .header1{
     background-color: #9381FF;
     width: 100%;
@@ -83,6 +86,7 @@ nav .current{
     height: 200px;  
 }
 p{
+    font-family: 'Lora';
     padding: 10px;
     text-align: center;
 }
@@ -193,10 +197,65 @@ footer img{
     align-content: center;
 }
 
+.recipe{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+
+}
+
+.recipe-directions, .recipe-ingredients{
+    grid-column-start: 2;
+    text-align: left;
+    
+}
+.recipe_title img{
+    display: block;
+    margin: auto;
+    width: 25%;
+    padding-top: 25px;
+}
+.recipe li{
+    font-family: 'Lora';
+    padding: 10px;
+    line-height: initial;
+}
+
+form {
+    border: 5px solid #FFD8BE;
+    padding: 25px;
+    margin: 25px;
+    min-height: 200px;
+}
+legend { 
+    font-size: 45px;
+    font-family: 'Montserrat';
+    text-align: center;
+    padding-bottom: 10px;
+}
+label{
+    font-family: 'Lora';
+    font-size: 15px;
+    width: 15%;
+}
+input{
+    width: 75%;
+    padding: 20px;
+    margin-top: 10px;
+}
+.nav_links{
+    display: none;
+}
+nav a.icon{
+    background: #F8F7FF;
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
 /* Desktop View */
 @media all and (min-width: 800px){
     p{
-        font-size: 35px;
+        font-size: 30px;
     }
     .intro-text p{
         font-size: 35px;
@@ -266,10 +325,48 @@ footer img{
     #logo{
         max-width: 400px;
     }
-    .nav_links li{
+    .nav_links{
         padding-top: 10px;
+        display: block;
+    }
     }
     footer img{
         max-width: 400px;
     }
+    nav{
+        animation-name: nav-background;
+        animation-duration: 3s;
+    }
+    nav a{
+        animation-name: nav-text;
+        animation-duration: 3s;
+    }
+    @-webkit-keyframes nav-background{
+        from{background: #F8F7FF;}
+        to{background: #9381FF;}
+    }
+    @keyframes nav-background{
+        from{background: #F8F7FF;}
+        to{background: #9381FF;}
+    }
+    @-webkit-keyframes nav-text{
+        from{color: #F8F7FF;}
+        to{color: #000000;}
+    }
+    @keyframes nav-text{
+        from{color: #F8F7FF;}
+        to{color: #000000;}
+    }
+    .form-p{
+        padding-top: 40px;
+    }
 }
+
+/* @media screen and (prefers-reduced-motion: reduce){
+    nav a{
+        animation: none;
+    }
+    nav{
+        animation: none;
+    }
+} */

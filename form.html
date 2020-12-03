@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="css/html5reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
+  <title>Contact Form</title>
+</head>
+<body>
+    <div class="skip"><a href="#main"> Skip to Main Content</a></div>
+        <header class="header1">
+            <a href="index.html"><img src="images/collegeeatzlogo.png" alt="College Eatz" id="logo"></a>
+ 
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href = "tjs.html">Trader Joe's Reviews</a></li>
+                    <li><a href = "airfryer.html">Air Fryer Recipes</a></li>
+                    <li><a class="current" href = "about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <input type="text" placeholder="Search">
+                </ul>
+            </nav>
+    </header>
+    <main>
+    <div class="form-p">
+    <p>If you'd like to contact Alex, fill out the information below and she'll get back to you ASAP!</p>
+    </div>
+    <form action="https://formspree.io/f/xdopledy" method="POST">
+    <fieldset>
+    <legend>Contact Form</legend>
+    <label for="name_id">Your Name</label>
+    <input type="text" id="name_id"placeholder="Enter Your Name" name="name">
+    <br>
+    <label for="email_id">Your Email</label>
+    <input type="email" id="email_id" placeholder="Enter Your Email" name="email">
+    <br>
+
+    <label for="phone_id">Your Phone Number</label>
+    <input type="tel" id="phone_id" placeholder="Enter Your Phone Number" name="phone">
+    <br>
+
+
+    <label for="message_id">Message</label>
+    <textarea name="mesg" id="message_id"></textarea>
+    
+    <br>
+
+    <input type="submit" value="Submit the form NOW!">
+  </fieldset>
+ </form>
+ </main>
+ <footer>
+    <img src="images/collegeeatzlogo.png" alt="Collge Eatz"/>
+    <p>University of Michigan School of Information <br> Class of 2022</p>
+</footer>
+</body>
+</html>
