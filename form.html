@@ -10,6 +10,15 @@
   <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
   <title>Contact Form</title>
 </head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ES1LNBT4Q8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ES1LNBT4Q8');
+</script>
 <body>
     <div class="skip"><a href="#main"> Skip to Main Content</a></div>
         <header class="header1">
@@ -22,35 +31,34 @@
                     <li><a href = "airfryer.html">Air Fryer Recipes</a></li>
                     <li><a class="current" href = "about.html">About</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
-                    <input type="text" placeholder="Search">
                 </ul>
             </nav>
     </header>
-    <main>
-    <div class="form-p">
-    <p>If you'd like to contact Alex, fill out the information below and she'll get back to you ASAP!</p>
-    </div>
-    <form action="https://formspree.io/f/xdopledy" method="POST">
-    <fieldset>
-    <legend>Contact Form</legend>
-    <label for="name_id">Your Name</label>
-    <input type="text" id="name_id"placeholder="Enter Your Name" name="name">
-    <br>
-    <label for="email_id">Your Email</label>
-    <input type="email" id="email_id" placeholder="Enter Your Email" name="email">
-    <br>
+    <main class="container" id="skip" tabindex="0">
+        <div class="form-p">
+        <p>If you'd like to contact Alex, fill out the information below and she'll get back to you ASAP!</p>
+        </div>
+        <form action="https://formspree.io/f/xdopledy" method="POST">
+        <fieldset>
+        <legend>Contact Form</legend>
+        <label for="name_id">Your Name</label>
+        <input type="text" id="name_id"placeholder="Enter Your Name" name="name">
+        <br>
+        <label for="email_id">Your Email</label>
+        <input type="email" id="email_id" placeholder="Enter Your Email" name="email">
+        <br>
 
-    <label for="phone_id">Your Phone Number</label>
-    <input type="tel" id="phone_id" placeholder="Enter Your Phone Number" name="phone">
-    <br>
+        <label for="phone_id">Your Phone Number</label>
+        <input type="tel" id="phone_id" placeholder="Enter Your Phone Number" name="phone">
+        <br>
 
 
-    <label for="message_id">Message</label>
-    <textarea name="mesg" id="message_id"></textarea>
-    
-    <br>
+        <label for="message_id">Message</label>
+        <textarea name="mesg" id="message_id"></textarea>
+        
+        <br>
 
-    <input type="submit" value="Submit the form NOW!">
+        <input type="submit" value="Submit the form NOW!">
   </fieldset>
  </form>
  </main>
