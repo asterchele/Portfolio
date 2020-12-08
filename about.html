@@ -20,7 +20,7 @@
   gtag('config', 'G-ES1LNBT4Q8');
 </script>
 <body>
-    <div class="skip"><a href="#behind-college-eatz"> Skip to Main Content</a></div>
+    <div class="skip"><a href="#main"> Skip to Main Content</a></div>
         <header class="header1">
             <a href="index.html"><img src="images/collegeeatzlogo.png" alt="College Eatz" id="logo"></a>
  
@@ -35,28 +35,40 @@
             </nav>
     </header>
 
-    <main>
+    <main class="container" id="skip" tabindex="0">
         <h1 class="behind-college-eatz">Behind College Eatz</h1>
 
         <div class="about-me">
 
-            <div class="aboutme-image">
-            <img src="images/aboutme.jpg" alt="About Me">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="aboutme-image">
+                        <img src="images/aboutme.jpg" alt="About Me">
+                    </div>
+
+                    <div class="card-back">
+                        <img src="images/mass.jpg" alt="Massachusetts Map">
+                    </div>
+                </div>
             </div>
 
             <div class="aboutme-text">
-                <h1>About Me</h1>
+                <h1 id="main">About Me</h1>
                 <p>Hi! My name is Alex Sterchele and I am a Junior at the University of Michigan studying Information Analytics.  Originally from just outside Boston, Massachusetts, I 
                     made the move to Ann Arbor in the fall of 2018.  My first two years of college I relied on campus dining halls or meal plans from my sorority house, however by Junior
                     year I was responsible for paying and making my own meals.    
+                    <br>
+                    The more I've cooked on my own, the more I've come to appreciate food along with making it.  All of the recipes on my site are from my own experiences cooking through
+                    trial and error.  I've learned it's ok if something doesn't come out as planned-just keep going forward.  
                 </p>
             </div>
 
             <div class="aboutme-button">
-                <button>Contact Me</button>
+                <button><a href="form.html">Contact Me</a></button>
             </div>
 
         </div>
+
     </main>
     <footer>
         <img src="images/collegeeatzlogo.png" alt="Collge Eatz"/>

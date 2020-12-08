@@ -26,6 +26,9 @@ h2{
     text-align: center;
     margin: auto;
 }
+a{
+    color: #000000;
+}
 nav{
     background-color: #9381FF;
     padding-bottom: 15px;
@@ -65,6 +68,7 @@ main{
     width: 100%;
     display: block;
     height: 200px;  
+    width: 100%;
 }
 .intro-text{
     display: grid;
@@ -165,24 +169,58 @@ footer img{
     margin-top: 50px;
     margin-bottom: 100px;
 }
-
 .about-me{
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: auto auto auto;
     grid-column-start: 2;
     margin-top: 25px;
-    border-top: 3px solid #B8B8FF;
-    border-bottom: 3px solid #B8B8FF;
+}
+.card-inner{
+    grid-column-start: 2;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.card .card-inner:active{
+    transform: rotateY(180deg);
+}
+.aboutme-image, .card-back{
+    grid-column-start: 2;
+    position: absolute;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.card-inner img{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    width: 80%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+}
+.card{
+    overflow: hidden;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+.card-back{
+    transform: rotateY(180deg);
+    position: relative;
 }
 .aboutme-image{
-    grid-column-start: 2;
-    width: 100%;
-    margin-top: 25px;
-    overflow: hidden;
-
+    margin-right: 50px;
 }
+
 .aboutme-text{
     grid-column-start: 2;
+    grid-row-start: 2;
 }
 .image-gallery{
     display: flex;
@@ -298,6 +336,23 @@ input{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.aboutme-button{
+    grid-column-start: 2;
+    grid-row-start: 3;
+    margin-right: auto;
+    margin-left: auto;
+}
+button, #submit-button{
+    background-color: #FFD8BE;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    transition-duration: 0.5s;
+}
 /* Tablet View*/
 @media all and (min-width: 481px) and (max-width: 799px){
     .nav_links{
@@ -353,25 +408,70 @@ input{
     footer p{
         margin-right: 0px;
     }
-    main .about-me{
+    .about-me{
     display: grid;
     grid-template-columns: 1fr 3fr 5fr 1fr;
+    grid-template-rows: auto auto auto;
     padding-bottom: 50px;
     }
-    .aboutme-image{
+    .card{
         grid-column-start: 2;
+        grid-row-start: 1;
+        position: relative;
+        perspective: 1000px;
+    }
+    .card-inner{
+        position: relative;
         width: 100%;
-        height: auto;
-        padding-top: 50px;
-        overflow: visible;
+        height: 100%;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+    }
+    .card .card-inner:active, .card-inner:focus{
+        transform: rotateY(180deg);
+    }
+    .aboutme-image, .card-back{
+        grid-column-start: 2;
+        position: absolute;
+        overflow: hidden;
         margin-left: auto;
         margin-right: auto;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    .card-back{
+        transform: rotateY(180deg);
+        position: relative;
+    }
+    .aboutme-image{
+        margin-right: 50px;
     }
     .behind-college-eatz{
         padding-bottom: 50px;
     }
     .aboutme-text{
         grid-column-start: 3;
+        grid-row-start: 1;
+    }
+    .aboutme-button{
+        grid-column-start: 2;
+        grid-row-start: 2;
+        width: 100%;
+    }
+    button, #submit-button{
+        background-color: #FFD8BE;
+        text-align: center;
+        display: inline-block;
+        font-size: 35px;
+        margin: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 4px;
+        transition-duration: 0.5s;
+        width: 50%;
+    }
+    button:hover, #submit-button:hover{
+        background-color: #B8B8FF;
     }
     .image-gallery{
         display: flex;
