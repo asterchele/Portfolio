@@ -248,10 +248,10 @@ input{
     align-items: center;
 }
 .potstickers, .goatcheese, .mandarinchicken, .icecream, .salmon, .steak{
-    color: #FFEEDD;
+    background:#F8F7FF;
     border: 1px solid #000000;
     margin: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     box-shadow: 10px 15px #9381FF;
     color: #000000;
     display: grid;
@@ -283,7 +283,20 @@ input{
     object-fit: contain;
 }
 .TJ-Rev h1{
-    padding-top: 20px
+    padding-top: 20px;
+    background-color: #F8F7FF;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: 3px solid #9381FF;
+    text-decoration: none;
+}
+.parallax{
+    background-image: url("../images/tjs/store.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /* Tablet View*/
 @media all and (min-width: 481px) and (max-width: 799px){
