@@ -53,7 +53,7 @@ nav a:hover{
 nav .current{
     text-decoration: underline;
 }
-cu
+
 #logo{
     display: block;
     margin-left: auto;
@@ -214,9 +214,7 @@ footer img{
     transform: rotateY(180deg);
     position: relative;
 }
-.aboutme-image{
-    margin-right: 50px;
-}
+
 
 .aboutme-text{
     grid-column-start: 2;
@@ -338,7 +336,6 @@ input{
 }
 .aboutme-button{
     grid-column-start: 2;
-    grid-row-start: 3;
     margin-right: auto;
     margin-left: auto;
 }
@@ -452,6 +449,7 @@ button, #submit-button{
     .aboutme-text{
         grid-column-start: 3;
         grid-row-start: 1;
+        grid-row-end: 4;
     }
     .aboutme-button{
         grid-column-start: 2;
