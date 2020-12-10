@@ -176,6 +176,8 @@ footer img{
     grid-column-start: 2;
     margin-top: 25px;
 }
+
+/* Flip Card Effect */
 .card-inner{
     grid-column-start: 2;
     position: relative;
@@ -184,7 +186,7 @@ footer img{
     transition: transform 1s;
     transform-style: preserve-3d;
 }
-.card .card-inner:active{
+.card-inner:hover, .card-inner:focus-within, .card-inner:active, .card-inner:focus{
     transform: rotateY(180deg);
 }
 .aboutme-image, .card-back{
@@ -357,8 +359,12 @@ button, #submit-button{
         flex-direction: row;
         align-items: center;
         text-align: center;
+        margin: 0px;
         margin-top: -25px;
         padding: 0;
+    }
+    .header1{
+        background-color: #9381FF;
     }
 
 }
@@ -498,14 +504,6 @@ button, #submit-button{
         animation-name: nav-text;
         animation-duration: 3s;
     }
-    /* @-webkit-keyframes nav-background{
-        from{background: #F8F7FF;}
-        to{background: #9381FF;}
-    }
-    @keyframes nav-background{
-        from{background: #F8F7FF;}
-        to{background: #9381FF;}
-    } */
     @-webkit-keyframes nav-text{
         from{color:#9381FF;}
         to{color: #000000;}
@@ -529,11 +527,11 @@ button, #submit-button{
 
 }
 
-/* @media screen and (prefers-reduced-motion: reduce){
+@media screen and (prefers-reduced-motion: reduce){
     nav a{
         animation: none;
     }
     nav{
         animation: none;
     }
-} */
+}
