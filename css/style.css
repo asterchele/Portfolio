@@ -217,7 +217,6 @@ footer img{
     position: relative;
 }
 
-
 .aboutme-text{
     grid-column-start: 2;
     grid-row-start: 2;
@@ -257,7 +256,7 @@ footer img{
     padding: 10px;
     line-height: initial;
 }
-
+/* Form */
 form {
     border: 5px solid #FFD8BE;
     padding: 25px;
@@ -328,6 +327,7 @@ input{
     border: 3px solid #9381FF;
     text-decoration: none;
 }
+/* Parallax Image */
 .parallax{
     background-image: url("../images/tjs/store.jpg");
     height: 500px;
